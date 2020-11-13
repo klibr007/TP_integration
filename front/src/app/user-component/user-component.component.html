@@ -1,0 +1,11 @@
+<input placeholder="Identifiant utilisateur" [(ngModel)] = "id_user"> 
+<button (click)="search()">Valider</button>
+<br>
+<br>
+<input placeholder="Nom d'utilisateur" [(ngModel)] = "name_user">
+<button (click)="add()">Ajouter</button>
+<Br>
+<br>
+<p *ngIf="user">L'utilisateur qui correspond à cet id est : {{currentUser.name}}</p>
+<br>
+
